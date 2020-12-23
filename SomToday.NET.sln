@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomToday.NET", "SomToday.NET.csproj", "{DD52179D-E859-4715-A81A-39E46F671075}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomTodayConsoleTest", "..\SomTodayConsoleTest\SomTodayConsoleTest.csproj", "{05D5D1CA-D1D8-4878-B47B-101170AEE0AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD52179D-E859-4715-A81A-39E46F671075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD52179D-E859-4715-A81A-39E46F671075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD52179D-E859-4715-A81A-39E46F671075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD52179D-E859-4715-A81A-39E46F671075}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05D5D1CA-D1D8-4878-B47B-101170AEE0AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05D5D1CA-D1D8-4878-B47B-101170AEE0AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05D5D1CA-D1D8-4878-B47B-101170AEE0AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05D5D1CA-D1D8-4878-B47B-101170AEE0AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3CCFB87-450C-4198-8081-622F2D94CB1C}
+	EndGlobalSection
+EndGlobal
