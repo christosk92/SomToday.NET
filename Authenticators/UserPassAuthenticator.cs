@@ -54,19 +54,24 @@ namespace SomToday.NET.Authenticators
                 return ("Bearer", _oAuthResponse.AccessToken);
             }
 
+            Dictionary<string, object>? data;
             if (_oAuthResponse != null && !_oAuthResponse.IsValid)
             {
                 //Refresh
-                throw new NotImplementedException("Refresh token not implemented yet!");
+                data = new Dictionary<string, object>
+                {
+                    {"refresh_token", _oAuthResponse.RefreshToken},
+                    {"grant_type", "password"},
+                };
             }
-
-            var data = new Dictionary<string, object>
+            data = new Dictionary<string, object>
             {
                 {"username", $@"{_schoolUuid}\{_username}"},
                 {"password", _password},
                 {"scope", "openid"},
                 {"grant_type", "password"},
             };
+
             try
             {
                 var postData = await AuthClient.GetToken(data);
