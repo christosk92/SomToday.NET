@@ -64,13 +64,16 @@ namespace SomToday.NET.Authenticators
                     {"grant_type", "password"},
                 };
             }
-            data = new Dictionary<string, object>
+            else
             {
-                {"username", $@"{_schoolUuid}\{_username}"},
-                {"password", _password},
-                {"scope", "openid"},
-                {"grant_type", "password"},
-            };
+                data = new Dictionary<string, object>
+                {
+                    {"username", $@"{_schoolUuid}\{_username}"},
+                    {"password", _password},
+                    {"scope", "openid"},
+                    {"grant_type", "password"},
+                };
+            }
 
             try
             {
